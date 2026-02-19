@@ -28,6 +28,7 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/techchat")
 
 // Routes
 try {
+  app.get("/", (req, res) => res.send("TechChat API is running"));
   app.use("/api/questions", require("./src/routes/questionRoutes"));
   app.use("/api/stories", require("./src/routes/storyRoutes"));
   console.log("✓ Routes loaded successfully");
