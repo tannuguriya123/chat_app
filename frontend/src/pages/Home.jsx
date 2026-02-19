@@ -2,8 +2,8 @@ import { useEffect,useState } from "react";
 import Header from "../components/layout/Header";
 import QuestionCard from "../components/question/QuestionCard";
 import StoryCard from "../components/story/StoryCard";
-import api from "../api/axios";
-import socket from "../socket/socket";
+import api from "../api";
+import socket from "../socket";
 // import "./Home.css";
 
 {/* <div className="app-container"></div> */}
